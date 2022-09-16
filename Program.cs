@@ -24,17 +24,34 @@
 
 //-----------------------------SNACK 2----------------------------------------//
 
-Console.WriteLine("inserisci la prima parola");
-string phrase1 = Console.ReadLine();
-Console.WriteLine("inserisci la seconda parola");
-string phrase2 = Console.ReadLine();
+//Console.WriteLine("inserisci la prima parola");
+//string phrase1 = Console.ReadLine();
+//Console.WriteLine("inserisci la seconda parola");
+//string phrase2 = Console.ReadLine();
 
-if (phrase1.Length > phrase2.Length)
+//if (phrase1.Length > phrase2.Length)
+//{
+//    Console.WriteLine("La prima parola è più lunga");
+//} else if (phrase2.Length > phrase1.Length) {
+//    Console.WriteLine("La secondo parola è la più lunga");
+//} else
+//{
+//    Console.WriteLine("Le due parole hanno la stessa lunghezza");
+//}
+
+//------------------------------SNACK 3---------------------------------------//
+
+int number, sum = 0;
+Console.WriteLine("Inserisci dieci numeri e calcolerò la loro somma!!");
+
+for (int i = 0; i < 10; i++)
 {
-    Console.WriteLine("La prima parola è più lunga");
-} else if (phrase2.Length > phrase1.Length) {
-    Console.WriteLine("La secondo parola è la più lunga");
-} else
-{
-    Console.WriteLine("Le due parole hanno la stessa lunghezza");
+    Console.Write("inserisci il numero {0}:", i + 1);
+    number = Convert.ToInt32(Console.ReadLine());
+    sum += number;
+
 }
+
+Console.WriteLine("La somma dei 10 numeri che hai inserito è: {0}", sum);
+Console.WriteLine();
+
