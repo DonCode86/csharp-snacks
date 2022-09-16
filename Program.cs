@@ -39,19 +39,39 @@
 //    Console.WriteLine("Le due parole hanno la stessa lunghezza");
 //}
 
+
 //------------------------------SNACK 3---------------------------------------//
 
-int number, sum = 0;
-Console.WriteLine("Inserisci dieci numeri e calcolerò la loro somma!!");
+//int number, sum = 0;
+//Console.WriteLine("Inserisci dieci numeri e calcolerò la loro somma!!");
 
-for (int i = 0; i < 10; i++)
+//for (int i = 0; i < 10; i++)
+//{
+//    Console.Write("inserisci il numero {0}:", i + 1);
+//    number = Convert.ToInt32(Console.ReadLine());
+//    sum += number;
+
+//}
+
+//Console.WriteLine("La somma dei 10 numeri che hai inserito è: {0}", sum);
+//Console.WriteLine();
+
+
+//------------------------------SNACK 4---------------------------------------//
+
+using System;
+
+double sum = 0, avg = 0;
+double[] numbers = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+for (int i = 0; i < numbers.Length; i++)
 {
-    Console.Write("inserisci il numero {0}:", i + 1);
-    number = Convert.ToInt32(Console.ReadLine());
-    sum += number;
-
+    sum += numbers[i];
 }
 
-Console.WriteLine("La somma dei 10 numeri che hai inserito è: {0}", sum);
-Console.WriteLine();
+avg = sum / numbers.Length;
 
+Console.WriteLine("La lista dei numeri è: {0}", string.Join(", ", numbers));
+Console.WriteLine("la somma dei numeri è : " + sum);
+Console.WriteLine("la media dei numeri è : " + avg);
+
+Console.ReadKey();
