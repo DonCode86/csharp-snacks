@@ -103,17 +103,34 @@
 //    Console.WriteLine("non sei in lista!");
 //}
 
+
 //------------------------------SNACK 7---------------------------------------//
 
-int[] numbers = new int[6];
+//int[] numbers = new int[6];
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    Console.WriteLine("Inserire un numero");
+//    int userInput = Convert.ToInt32(Console.ReadLine());
+//    if (userInput % 2 == 1)
+//    {
+//        numbers[i] = userInput;
+//    }
+//}
+//Console.WriteLine("Ti mostro solo i numeri dispari che hai inserito: " + string.Join(", ", numbers));
+
+
+//------------------------------SNACK 8---------------------------------------//
+
+int[] numbers = { 90, 12, 35, 51, 24, 4, 16, 81, 9 };
+int sum = 0;
+Console.WriteLine("La lista dei numeri è la seguente:");
 for (int i = 0; i < numbers.Length; i++)
 {
-    Console.WriteLine("Inserire un numero");
-    int userInput = Convert.ToInt32(Console.ReadLine());
-    if (userInput % 2 == 1)
+    if (i % 2 != 0)
     {
-        numbers[i] = userInput;
+        sum = sum + numbers[i];
     }
+    
+    Console.WriteLine(numbers[i]);
 }
-Console.WriteLine("Ti mostro solo i numeri dispari che hai inserito: " + string.Join(", ", numbers));
-
+Console.WriteLine("La somma degli elementi in posizione dispari all'interno dell'array è:" + sum);
