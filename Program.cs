@@ -59,17 +59,34 @@
 
 //------------------------------SNACK 4---------------------------------------//
 
-double sum = 0, avg = 0;
-double[] numbers = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-for (int i = 0; i < numbers.Length; i++)
-{
-    sum += numbers[i];
-}
+//double sum = 0, avg = 0;
+//double[] numbers = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    sum += numbers[i];
+//}
 
-avg = sum / numbers.Length;
+//avg = sum / numbers.Length;
 
-Console.WriteLine("La lista dei numeri è: {0}", string.Join(", ", numbers));
-Console.WriteLine("la somma dei numeri è : " + sum);
-Console.WriteLine("la media dei numeri è : " + avg);
+//Console.WriteLine("La lista dei numeri è: {0}", string.Join(", ", numbers));
+//Console.WriteLine("la somma dei numeri è : " + sum);
+//Console.WriteLine("la media dei numeri è : " + avg);
 
-Console.Read();
+//Console.Read();
+
+//------------------------------SNACK 5---------------------------------------//
+
+//Console.WriteLine("Inserisci un numero");
+//string userNumber = Console.ReadLine();
+//int num1 = 0;
+//num1 = int.Parse(userNumber);
+
+//if (num1 % 2 == 0)
+//{
+//    Console.WriteLine(num1);
+//} else
+//{
+//    Console.WriteLine(num1 + 1);
+//}
+
+//------------------------------SNACK 6---------------------------------------//
