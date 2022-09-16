@@ -121,16 +121,29 @@
 
 //------------------------------SNACK 8---------------------------------------//
 
-int[] numbers = { 90, 12, 35, 51, 24, 4, 16, 81, 9 };
+//int[] numbers = { 90, 12, 35, 51, 24, 4, 16, 81, 9 };
+//int sum = 0;
+//Console.WriteLine("La lista dei numeri è la seguente:");
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    if (i % 2 != 0)
+//    {
+//        sum = sum + numbers[i];
+//    }
+
+//    Console.WriteLine(numbers[i]);
+//}
+//Console.WriteLine("La somma degli elementi in posizione dispari all'interno dell'array è:" + sum);
+
+//------------------------------SNACK 9---------------------------------------//
+
+int[] numbers = new int[51];
 int sum = 0;
-Console.WriteLine("La lista dei numeri è la seguente:");
-for (int i = 0; i < numbers.Length; i++)
+Console.WriteLine("Inserisci un numero fino a che la somma dei numeri che hai inserito non sara' maggiore o uguale di 50!");
+do
 {
-    if (i % 2 != 0)
-    {
-        sum = sum + numbers[i];
-    }
-    
-    Console.WriteLine(numbers[i]);
-}
-Console.WriteLine("La somma degli elementi in posizione dispari all'interno dell'array è:" + sum);
+    Console.WriteLine("Inserisci un numero");
+    int userNumber = Convert.ToInt32(Console.ReadLine());
+    sum = sum + userNumber;
+} while (sum < 50);
+Console.WriteLine("La somma dei numeri che hai inserito è: " + sum);
