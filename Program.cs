@@ -137,13 +137,29 @@
 
 //------------------------------SNACK 9---------------------------------------//
 
-int[] numbers = new int[51];
-int sum = 0;
-Console.WriteLine("Inserisci un numero fino a che la somma dei numeri che hai inserito non sara' maggiore o uguale di 50!");
-do
+//int[] numbers = new int[51];
+//int sum = 0;
+//Console.WriteLine("Inserisci un numero fino a che la somma dei numeri che hai inserito non sara' maggiore o uguale di 50!");
+//do
+//{
+//    Console.WriteLine("Inserisci un numero");
+//    int userNumber = Convert.ToInt32(Console.ReadLine());
+//    sum = sum + userNumber;
+//} while (sum < 50);
+//Console.WriteLine("La somma dei numeri che hai inserito è: " + sum);
+
+//------------------------------SNACK 10---------------------------------------//
+
+Console.WriteLine("Inserisci il numero di array che vuoi creare!");
+int N = Convert.ToInt32(Console.ReadLine());
+
+for (int i = 0; i < N; i++)
 {
-    Console.WriteLine("Inserisci un numero");
-    int userNumber = Convert.ToInt32(Console.ReadLine());
-    sum = sum + userNumber;
-} while (sum < 50);
-Console.WriteLine("La somma dei numeri che hai inserito è: " + sum);
+    int[] numbers = new int[10];
+    for (int k = 0; k < 10; k++)
+    {
+        Random r = new Random();
+        numbers[k] = r.Next(1, 100);
+    }
+    Console.WriteLine("Array creato: " + string.Join(", ", numbers));
+}
