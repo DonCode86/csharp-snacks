@@ -74,4 +74,4 @@ Console.WriteLine("La lista dei numeri è: {0}", string.Join(", ", numbers));
 Console.WriteLine("la somma dei numeri è : " + sum);
 Console.WriteLine("la media dei numeri è : " + avg);
 
-Console.ReadKey();
+Console.Read();
