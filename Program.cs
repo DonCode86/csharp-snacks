@@ -90,3 +90,30 @@
 //}
 
 //------------------------------SNACK 6---------------------------------------//
+
+//string[] stringArray = { "Rossi", "Esposito", "Brambilla", "Ciccarelli" };
+//Console.WriteLine("Prego inserire il proprio Cognome e premere Invio");
+//string value = Console.ReadLine();  
+//int pos = Array.IndexOf(stringArray, value);
+//if (pos > -1)
+//{
+//    Console.WriteLine("sei in lista!");
+//}else
+//{
+//    Console.WriteLine("non sei in lista!");
+//}
+
+//------------------------------SNACK 7---------------------------------------//
+
+int[] numbers = new int[6];
+for (int i = 0; i < numbers.Length; i++)
+{
+    Console.WriteLine("Inserire un numero");
+    int userInput = Convert.ToInt32(Console.ReadLine());
+    if (userInput % 2 == 1)
+    {
+        numbers[i] = userInput;
+    }
+}
+Console.WriteLine("Ti mostro solo i numeri dispari che hai inserito: " + string.Join(", ", numbers));
+
