@@ -166,27 +166,45 @@
 
 //------------------------------SNACK 11---------------------------------------//
 
-Console.WriteLine("Inserisci la prima parola!");
-string firstWord = Console.ReadLine();
+//Console.WriteLine("Inserisci la prima parola!");
+//string firstWord = Console.ReadLine();
 
-Console.WriteLine("Inserisci la seconda parola!");
-string secondWord = Console.ReadLine();
+//Console.WriteLine("Inserisci la seconda parola!");
+//string secondWord = Console.ReadLine();
 
-compareWords(firstWord, secondWord);
+//compareWords(firstWord, secondWord);
 
-void compareWords(string firstInput, string secondInput)
+//void compareWords(string firstInput, string secondInput)
+//{
+//	if (firstInput.Length == secondInput.Length)
+//	{
+//		Console.WriteLine("Le parole che hai inserito hanno la stessa lunghezza e sono: " + firstInput + " , " + secondInput);
+//	}
+//	else if (firstInput.Length > secondInput.Length)
+//	{
+//		Console.WriteLine("La parola piu' lunga che hai inserito è: " + firstInput);
+//	}
+//	else
+//	{
+//		Console.WriteLine("La parola piu' lunga che hai inserito è: " + secondInput);
+//	}
+//}
+
+//------------------------------SNACK 12---------------------------------------//
+
+void evenOddfunction(int num1)
 {
-	if (firstInput.Length == secondInput.Length)
-	{
-		Console.WriteLine("Le parole che hai inserito hanno la stessa lunghezza e sono: " + firstInput + " , " + secondInput);
-	}
-	else if (firstInput.Length > secondInput.Length)
-	{
-		Console.WriteLine("La parola piu' lunga che hai inserito è: " + firstInput);
-	}
-	else
-	{
-		Console.WriteLine("La parola piu' lunga che hai inserito è: " + secondInput);
-	}
+    if (num1 % 2 == 0)
+    {
+        Console.WriteLine("Il numero che hai inserito e' pari");
+    } else
+    {
+        Console.WriteLine("il numero che hai inserito è dispari");
+    }
 }
 
+Console.WriteLine("inserisci un numero e ti dirò se è pari o dispari");
+string userNumber = Console.ReadLine();
+int numUser = int.Parse(userNumber);
+
+evenOddfunction(numUser);
