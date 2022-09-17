@@ -150,16 +150,43 @@
 
 //------------------------------SNACK 10---------------------------------------//
 
-Console.WriteLine("Inserisci il numero di array che vuoi creare!");
-int N = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Inserisci il numero di array che vuoi creare!");
+//int N = Convert.ToInt32(Console.ReadLine());
 
-for (int i = 0; i < N; i++)
+//for (int i = 0; i < N; i++)
+//{
+//    int[] numbers = new int[10];
+//    for (int k = 0; k < 10; k++)
+//    {
+//        Random r = new Random();
+//        numbers[k] = r.Next(1, 100);
+//    }
+//    Console.WriteLine("Array creato: " + string.Join(", ", numbers));
+//}
+
+//------------------------------SNACK 11---------------------------------------//
+
+Console.WriteLine("Inserisci la prima parola!");
+string firstWord = Console.ReadLine();
+
+Console.WriteLine("Inserisci la seconda parola!");
+string secondWord = Console.ReadLine();
+
+compareWords(firstWord, secondWord);
+
+void compareWords(string firstInput, string secondInput)
 {
-    int[] numbers = new int[10];
-    for (int k = 0; k < 10; k++)
-    {
-        Random r = new Random();
-        numbers[k] = r.Next(1, 100);
-    }
-    Console.WriteLine("Array creato: " + string.Join(", ", numbers));
+	if (firstInput.Length == secondInput.Length)
+	{
+		Console.WriteLine("Le parole che hai inserito hanno la stessa lunghezza e sono: " + firstInput + " , " + secondInput);
+	}
+	else if (firstInput.Length > secondInput.Length)
+	{
+		Console.WriteLine("La parola piu' lunga che hai inserito è: " + firstInput);
+	}
+	else
+	{
+		Console.WriteLine("La parola piu' lunga che hai inserito è: " + secondInput);
+	}
 }
+
